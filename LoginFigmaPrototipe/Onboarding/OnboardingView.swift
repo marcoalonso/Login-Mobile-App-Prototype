@@ -43,11 +43,7 @@ struct OnboardingView: View {
                                 
                             }, label: {
                                 NavigationLink("Get started", destination: LoginView())
-                                    .font(.subheadline)
-                                    .frame(width: 320, height: 48)
-                                    .foregroundColor(.white)
-                                    .background(Color.purple)
-                                    .cornerRadius(12)
+                                    .modifier(ButtonBlueModifier())
                             })
                             
                             Button(action: {
