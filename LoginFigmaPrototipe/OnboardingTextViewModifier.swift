@@ -16,7 +16,7 @@ struct OnboardingTextViewModifier: ViewModifier {
             .cornerRadius(12)
             .overlay(
             RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray, lineWidth: 2)
+                .stroke(Color.gray, lineWidth: 1)
             )
             .padding(.horizontal, 24)
     }

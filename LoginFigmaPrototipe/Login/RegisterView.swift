@@ -7,32 +7,31 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct RegisterView: View {
+    @State private var name: String = ""
     @State private var email: String = ""
+    @State private var username: String = ""
     @State private var password: String = ""
     
     var body: some View {
         ScrollView {
             VStack {
-                Image("Image5")
+                Image("Image4")
                     .resizable()
                     .frame(width: 352, height: 352)
                 
+                TextField("Name", text: $name)
+                    .modifier(OnboardingTextViewModifier())
                 
                 TextField("Email", text: $email)
+                    .modifier(OnboardingTextViewModifier())
+                
+                TextField("Username", text: $username)
                     .modifier(OnboardingTextViewModifier())
                 
                 SecureField("Password", text: $password)
                     .autocapitalization(.none)
                     .modifier(OnboardingTextViewModifier())
-                
-                HStack {
-                    Spacer()
-                    Text("Lupa password?")
-                        .font(.footnote)
-                        .padding(.trailing, 32)
-                        .padding(.bottom)
-                }
                 
                 Button(action: {
                     
@@ -104,5 +103,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    RegisterView()
 }

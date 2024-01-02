@@ -42,14 +42,14 @@ struct OnboardingView: View {
                                 goLogin = true
                                 
                             }, label: {
-                                NavigationLink("Get started", destination: LoginView())
+                                NavigationLink("Get started", destination: RegisterView())
                                     .modifier(ButtonBlueModifier())
                             })
                             
                             Button(action: {
                                 goSignUp = true
                             }, label: {
-                                NavigationLink("Sign Up", destination: LoginView())
+                                NavigationLink("Sign Up", destination: RegisterView())
                                     .font(.subheadline)
                                     .frame(width: 320, height: 48)
                                     .foregroundColor(.purple)
@@ -99,7 +99,7 @@ struct OnboardingView: View {
                                 if (currentSlide < slidesOnboarding.count - 1) {
                                     Text("Next")
                                 } else {
-                                    NavigationLink("Get started", destination: LoginView())
+                                    NavigationLink("Get started", destination: RegisterView())
                                 }
                             })
                             
