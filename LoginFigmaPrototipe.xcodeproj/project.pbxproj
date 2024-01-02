@@ -16,6 +16,7 @@
 		6CC7E89D2B449D2400027E2F /* OnboardingTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC7E89C2B449D2400027E2F /* OnboardingTextViewModifier.swift */; };
 		6CC7E89F2B449DB300027E2F /* ButtonBlueModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC7E89E2B449DB300027E2F /* ButtonBlueModifier.swift */; };
 		6CC7E8A22B44B32300027E2F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC7E8A12B44B32300027E2F /* LoginView.swift */; };
+		6CC7E8A42B44B4A600027E2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC7E8A32B44B4A600027E2F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		6CC7E89C2B449D2400027E2F /* OnboardingTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTextViewModifier.swift; sourceTree = "<group>"; };
 		6CC7E89E2B449DB300027E2F /* ButtonBlueModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBlueModifier.swift; sourceTree = "<group>"; };
 		6CC7E8A12B44B32300027E2F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6CC7E8A32B44B4A600027E2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				6CC7E88A2B44808D00027E2F /* Preview Content */,
 				6CC7E89C2B449D2400027E2F /* OnboardingTextViewModifier.swift */,
 				6CC7E89E2B449DB300027E2F /* ButtonBlueModifier.swift */,
+				6CC7E8A32B44B4A600027E2F /* HomeView.swift */,
 			);
 			path = LoginFigmaPrototipe;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				6CC7E8962B4484BE00027E2F /* OnboardingSlide.swift in Sources */,
 				6CC7E8942B44817F00027E2F /* OnboardingView.swift in Sources */,
 				6CC7E89B2B448C3D00027E2F /* RegisterView.swift in Sources */,
+				6CC7E8A42B44B4A600027E2F /* HomeView.swift in Sources */,
 				6CC7E8852B44808B00027E2F /* LoginFigmaPrototipeApp.swift in Sources */,
 				6CC7E89D2B449D2400027E2F /* OnboardingTextViewModifier.swift in Sources */,
 			);

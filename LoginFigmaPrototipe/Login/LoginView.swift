@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var showModal = false
     
     var body: some View {
         ScrollView {
@@ -35,7 +36,7 @@ struct LoginView: View {
                 }
                 
                 Button(action: {
-                    
+                    showModal = true
                 }, label: {
                     Text("Login")
                         .modifier(ButtonBlueModifier())
@@ -99,6 +100,9 @@ struct LoginView: View {
                 
                 .navigationBarBackButtonHidden(true)
             }
+            .fullScreenCover(isPresented: $showModal, content: {
+                HomeView()
+            })
         }
     }
 }
