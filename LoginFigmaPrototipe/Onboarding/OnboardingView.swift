@@ -15,6 +15,7 @@ struct OnboardingView: View {
     ]
     @State private var currentSlide = 0
     @State private var goLogin: Bool = false
+    @State private var goSignUp: Bool = false
     
     var body: some View {
         NavigationView {
@@ -33,6 +34,39 @@ struct OnboardingView: View {
                         Text("Bisnis jual beli menjangkau ke seluruh wilayah di Indonesia")
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
+                        
+                        // Buttons
+                        
+                        VStack {
+                            Button(action: {
+                                goLogin = true
+                                
+                            }, label: {
+                                NavigationLink("Get started", destination: LoginView())
+                                    .font(.subheadline)
+                                    .frame(width: 320, height: 48)
+                                    .foregroundColor(.white)
+                                    .background(Color.purple)
+                                    .cornerRadius(12)
+                            })
+                            
+                            Button(action: {
+                                goSignUp = true
+                            }, label: {
+                                NavigationLink("Sign Up", destination: LoginView())
+                                    .font(.subheadline)
+                                    .frame(width: 320, height: 48)
+                                    .foregroundColor(.purple)
+                                    .background(Color.white)
+                                    .cornerRadius(12)
+                                    .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.purple, lineWidth: 2)
+                                    )
+                            })
+                        }
+                        .opacity(currentSlide < slidesOnboarding.count - 1 ? 0 : 1)
+                        
                         
                         Spacer()
                         
